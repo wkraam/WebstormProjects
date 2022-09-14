@@ -18,7 +18,7 @@
         <ul>
             <li>Your name</li>
             <li> A date following this format dd/mm/yyyy</li>
-            <li> Software Engineering </li>
+            <li> Software Engineering</li>
         </ul>
     </div>
     <div>
@@ -27,7 +27,7 @@
 </section>
 <section>
     <h1>Courses</h1>
-    <table>
+    <table border="1">
         <thead>
         <tr>
             <th>#</th>
@@ -45,25 +45,49 @@
         </tr>
         <tr>
             <td>2</td>
-            <td> Systems modelling </td>
+            <td> Systems modelling</td>
             <td>fall</td>
             <td>85</td>
         </tr>
         <tr>
             <td>3</td>
-            <td> Requirements Engineering </td>
+            <td> Requirements Engineering</td>
             <td>fall</td>
             <td>99</td>
         </tr>
         <tr>
             <td>4</td>
-            <td> Human Computer Interaction </td>
+            <td> Human Computer Interaction</td>
             <td>fall</td>
             <td>65</td>
         </tr>
         </tbody>
+        <tfoot>
+        <tr>
+            <td>table footer</td>
+        </tr>
+        </tfoot>
     </table>
 </section>
+
+<br>
+
+<form action="" method="post">
+    <label for="head">Course title:</label><br>
+    <input type="text" id="head"><br>
+    <label for="Semester">Semester:</label><br>
+    <select id="Semester">
+        <option value="Fall">Fall</option>
+        <option value="Spring">Spring</option>
+    </select><br>
+    <label><strong>Attendance:</strong></label><br>
+    <input type="radio" id="virtual" name="attendance" value="Virtual Attendance">
+    <label for="virtual">Virtual Attendance</label><br>
+    <input type="radio" id="physical" name="attendance" value="Physical Attendance">
+    <label for="physical">Physical Attendance</label><br>
+    <input type="submit" name="submit">
+</form>
+
 <footer>
     <ul>
         <li>
@@ -72,9 +96,6 @@
         <li>
             <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
         </li>
-        <tfoot>
-            
-        </tfoot>
     </ul>
 </footer>
 </body>
